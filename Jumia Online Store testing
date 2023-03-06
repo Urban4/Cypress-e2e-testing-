@@ -1,0 +1,9 @@
+1. Visit jumia.com: cy.visit('https://www.jumia.com/')
+2. Enter 'laptop' into the search bar and click the search button: cy.get('#search-input-field').type('laptop').get('#search-button').click()
+3. Select a laptop from the search results: cy.get('[data-test="listing-product-0"]').click()
+4. Click the buy now button: cy.get('#buy-now-button').click()
+5. Enter the delivery address: cy.get('#address').type('123 Main Street, New York, NY, 10001')
+6. Click the submit button: cy.get('#submit-button').click()
+7. Select the payment method: cy.get('[data-test="payment-method-select"]').select('Credit Card')
+8. Enter credit card details: cy.get('#card-number').type('4111111111111111').get('#card-expiration').type('12/20').get('#card-cvv').type('123')
+9. Click the Submit button
